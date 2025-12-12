@@ -8,12 +8,12 @@ This repository contains data pulling, processing, and visualization work for co
   - `Final_NCEI Data_Pulling.ipynb` — Notebook to pull/process climate data from NCEI.
   - `Final_OpenMeteo_Data_Pulling.ipynb` — Notebook to pull/process climate data from Open-Meteo.
 - `CSV/`
-  - `seasonal_summary_temp_celsius.csv` — Processed seasonal temperature summary (°C).
-  - `seasonal_summary_temp_fahrenheit.csv` — Processed seasonal temperature summary (°F).
-  - `seasonal_summary_wind_full.csv` — Processed seasonal wind summary.
+  - `seasonal_summary_temp_celsius.csv` — Processed seasonal temperature summary (°C). (NCEI)
+  - `seasonal_summary_temp_fahrenheit.csv` — Processed seasonal temperature summary (°F). (NCEI)
+  - `seasonal_summary_wind_full.csv` — Processed seasonal wind summary (OpenMeteo).
 - `Visualizations/`
   - `climate_visualizations.ipynb` — Notebook with climate related visualizations
-  - `wind_visualizations.ipynb` — Notebook with wind related visualizations
+  - `folium_map.ipynb` — Notebook with code for folium map
   - `california_climate_map.html` — Interactive folium map
 
 ## Project overview
@@ -50,15 +50,15 @@ jupyter notebook
 Open and run:
 - `Data Pulling NCEI-Open Meteo/Final_NCEI Data_Pulling.ipynb`
 - `Data Pulling NCEI-Open Meteo/Final_OpenMeteo_Data_Pulling.ipynb`
-- `Visualizations/climate_visualizations.ipynb` and `Visualizations/wind_visualizations.ipynb`
+- `Visualizations/climate_visualizations.ipynb` and `Visualizations/folium_map.ipynb`
 
 Running the first two notebooks will (re)generate the CSV files in `CSV/`.
 
 ## Reproducibility and notes
 
 - The NCEI API requires a token to use the API as well as has a rate limit on requests, so take that into consideration when using this repo.
-- The Open-Meteo API is typically free to call without a key
-- Some of the notebooks provided may save large intermediate files or take time to run
+- The Open-Meteo API is typically free to call without a key.
+- Some of the notebooks provided may save large intermediate files or take time to run.
 
 ## File structure (summary)
 
